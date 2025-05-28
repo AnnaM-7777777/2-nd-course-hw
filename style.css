@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top {
+    /* background-image: url(img-top/topIndex.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px;
+    padding-top: 196px;
+    box-sizing: border-box;
+    background-color: #E1FF8F;
+    color: #202027;
+    position: relative;
+}
+
+.top__heading {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    margin-bottom: 24px;
+}
+
+.top__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;    
+}
+
+.top__text_bottom {
+    margin-bottom: 48px;
+}
+
+.top__text span {
+    font-weight: 600;
+}
+
+.top__btn {
+    width: 247px;
+    height: 66px;
+    border: 1px solid #202027;
+    border-radius: 60px;
+    background-color: #202027;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.top__btn:hover {
+    background-color: #ffffff;
+    color: #202027;
+}
+
+/* __________  бегущая строка  __________ */
+.top__running-line {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 90px;
+    background-color: #BCEC30;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.top__running-line:hover .top__item {
+    animation-play-state: paused;
+}
+
+.top__item {
+    display: flex;
+    column-gap: 51px;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 19px;
+    padding-right: 30px;
+    user-select: none;
+    animation: scroll 30s linear infinite;
+}
+
+
+.top__item-text {
+    color: #202027;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.top__item-img {
+    width: 36px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+/* __________  фоновые звезды  __________ */
+.top__img-star {
+    position: absolute;
+}
+
+.top__img-star_1 {
+    top: 0;
+    right: 0;
+}
+
+.top__img-star_2 {
+    bottom: 146px;
+    right: 344px;
+}
+
+.top__img-star_3 {
+    top: 69px;
+    left: 156px;
+}
+
+.top__img-star_4 {
+    top: 94px;
+    left: 63px;
+}
+
+.top__img-star_5 {
+    bottom: 222px;
+    right: 500px;
+}
+
+
