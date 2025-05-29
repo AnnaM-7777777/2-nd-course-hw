@@ -47,6 +47,10 @@ body {
     font-weight: 600;
 }
 
+.top__content a {
+    text-decoration: none;
+}
+
 .top__btn {
     width: 247px;
     height: 66px;
@@ -197,6 +201,8 @@ body {
     background-color: #ffffff;
     cursor: pointer;
     z-index: 1;
+    text-decoration: none;
+    color: #202027;
 }
 
 .info__box-game:hover {
@@ -281,6 +287,8 @@ body {
     grid-template-rows: 100%;
     border-radius: 30px;
     overflow: hidden;
+    color: #202027;
+    text-decoration: none;
 }
 
 .games__block-img {
@@ -306,7 +314,7 @@ body {
     margin-bottom: 36px;
 }
 
-.games__block-text a {
+.games__block-link {
     text-decoration: none;
 }
 

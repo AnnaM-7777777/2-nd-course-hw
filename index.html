@@ -19,7 +19,7 @@
             <h1 class="top__heading">Добро пожаловать <br> на мой сайт мини-игр</h1>
             <p class="top__text">Тебе предстоит пройти несколько увлекательных игр.</p>
             <p class="top__text top__text_bottom">Если готов, нажимай <span>«Поехали!»</span> и <span>приступай</span>.</p>
-            <button class="top__btn">Поехали!</button>
+            <a href="#infoGames"><button class="top__btn">Поехали!</button></a>
         </div>
 
         <!-- __________  бегущая строка  __________ -->
@@ -75,7 +75,7 @@
 
 
     <!-- __________  info - блок «Об играх»  __________ -->
-    <div class="info center">
+    <div class="info center" id="infoGames">
         <div class="info__description">
             <h2 class="info__heading">Об играх</h2>
             <p class="info__text">В моей коллекции представлено 6 игр на разные темы.</p>
@@ -86,7 +86,7 @@
         <!-- __________  карточки с игрой  __________ -->
         <div class="info__games">
             <div class="info__box">
-                <div class="info__box-game">
+                <a class="info__box-game" href="#game1">
                     <div class="info__box-img">
                         <img src="img/b1-1.png" alt="игра">
                     </div>
@@ -95,10 +95,10 @@
                         <p>Игра № 1</p>
                         <h3>Угадай число</h3>
                     </div>
-                </div>
+                </a>
 
 
-                <div class="info__box-game">
+                <a class="info__box-game" href="#game4">
                     <div class="info__box-img">
                         <img src="img/b1-4.png" alt="игра">
                     </div>
@@ -107,11 +107,11 @@
                         <p>Игра № 4</p>
                         <h3>Камень, ножницы, бумага</h3>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="info__box">
-                <div class="info__box-game">
+                <a class="info__box-game" href="#game2">
                     <div class="info__box-img">
                         <img src="img/b1-2.png" alt="игра">
                     </div>
@@ -120,10 +120,10 @@
                         <p>Игра № 2</p>
                         <h3>Простая арифметика</h3>
                     </div>
-                </div>
+                </a>
 
 
-                <div class="info__box-game">
+                <a class="info__box-game" href="#game5">
                     <div class="info__box-img">
                         <img src="img/b1-5.png" alt="игра">
                     </div>
@@ -132,11 +132,11 @@
                         <p>Игра № 5</p>
                         <h3>Простая викторина</h3>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="info__box">
-                <div class="info__box-game">
+                <a class="info__box-game" href="#game3">
                     <div class="info__box-img">
                         <img src="img/b1-3.png" alt="игра">
                     </div>
@@ -145,10 +145,10 @@
                         <p>Игра № 3</p>
                         <h3>Переверни текст</h3>
                     </div>
-                </div>     
+                </a>     
 
 
-                <div class="info__box-game">
+                <a class="info__box-game" href="#game6">
                     <div class="info__box-img">
                         <img src="img/b1-6.png" alt="игра">
                     </div>
@@ -157,7 +157,7 @@
                         <p>Игра № 6</p>
                         <h3>Генератор случайных цветов</h3>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
 
@@ -173,17 +173,17 @@
         <h2 class="games__heading">Мини-игры</h2>
 
         <div class="games__conteiner">
-            <div class="games__block">
+            <div class="games__block" id="game1">
                 <div class="games__block-img"><img src="img/b3-1.png" alt="игра"></div>
 
                 <div class="games__block-text">
                     <h3>Угадай число</h3>
                     <p>Попробуй угадать случайное число от 1 до 100.</p>
-                    <a href="#"><button class="games__block-btn">Играть!</button></a>
+                    <a class="games__block-link" href="#"><button class="games__block-btn">Играть!</button></a>
                 </div>            
             </div>
 
-            <div class="games__block">
+            <div class="games__block" id="game2">
                 <div class="games__block-img"><img src="img/b3-2.png" alt="игра"></div>
 
                 <div class="games__block-text">
@@ -193,7 +193,7 @@
                 </div>            
             </div>
 
-            <div class="games__block">
+            <div class="games__block" id="game3">
                 <div class="games__block-img"><img src="img/b3-3.png" alt="игра"></div>
 
                 <div class="games__block-text">
@@ -203,7 +203,7 @@
                 </div>            
             </div>
 
-            <div class="games__block">
+            <div class="games__block" id="game4">
                 <div class="games__block-img"><img src="img/b3-4.png" alt="игра"></div>
 
                 <div class="games__block-text">
@@ -213,7 +213,7 @@
                 </div>            
             </div>
 
-            <div class="games__block">
+            <div class="games__block" id="game5">
                 <div class="games__block-img"><img src="img/b3-5.png" alt="игра"></div>
 
                 <div class="games__block-text">
@@ -223,7 +223,7 @@
                 </div>            
             </div>
 
-            <div class="games__block">
+            <div class="games__block" id="game6">
                 <div class="games__block-img"><img src="img/b3-6.png" alt="игра"></div>
 
                 <div class="games__block-text">
