@@ -13,10 +13,6 @@ body {
 }
 
 .top {
-    /* background-image: url(img-top/topIndex.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -119,33 +115,41 @@ body {
 }
 
 /* __________  фоновые звезды  __________ */
-.top__img-star {
+.top__img-star-1,
+.top__img-star-2,
+.top__img-star-3,
+.top__img-star-4,
+.top__img-star-5 {
     position: absolute;
 }
 
-.top__img-star_1 {
+.top__img-star-1 {
     top: 0;
     right: 0;
 }
 
-.top__img-star_2 {
-    bottom: 146px;
-    right: 344px;
-}
-
-.top__img-star_3 {
+.top__img-star-2 {
+    width: 35px;
     top: 69px;
     left: 156px;
 }
 
-.top__img-star_4 {
+.top__img-star-3 {
+    width: 57px;
     top: 94px;
     left: 63px;
 }
 
-.top__img-star_5 {
-    bottom: 222px;
-    right: 500px;
+.top__img-star-4 {
+    width: 37px;
+    top: 535px;
+    right: 440px;
+}
+
+.top__img-star-5 {
+    width: 83px;
+    top: 565px;
+    right: 330px;
 }
 
 
@@ -221,6 +225,7 @@ body {
     word-break: break-word;
 }
 
+/* __________  фоновые звезды  __________ */
 .info__img-1,
 .info__img-2,
 .info__img-3 {
@@ -233,12 +238,139 @@ body {
 }
 
 .info__img-2 {
-    top: 1630px;
-    left: 40px;
-}
-
-.info__img-3 {
+    width: 32px;
+    transform: rotate(5.45deg);
     top: 1580px;
     left: 25px;
 }
 
+.info__img-3 {
+    width: 55px;
+    transform: rotate(5.45deg);
+    top: 1630px;
+    left: 40px;
+}
+
+
+/* __________  блок «Мини-игры»  __________ */
+.games {
+    background-color: #202027;
+    padding-top: 46px;
+    padding-bottom: 144px;
+}
+
+.games__heading {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFFFFF;
+    margin-bottom: 72px;
+}
+
+.games__conteiner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 500px);
+    grid-row-gap: 32px;
+}
+
+.games__block {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.games__block-img {
+    background-color: #FFFFFF;
+}
+
+.games__block-text {    
+    background-color: #FFFFFF;
+    padding: 48px;
+}
+
+.games__block-text h3 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 24px;
+}
+
+.games__block-text p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 36px;
+}
+
+.games__block-text a {
+    text-decoration: none;
+}
+
+.games__block-btn {
+    width: 247px;
+    height: 66px;
+    border: 1px solid #202027;
+    border-radius: 60px;
+    background-color: #202027;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.games__block-btn:hover {
+    background-color: #ffffff;
+    color: #202027;
+}
+
+.games__block-img {            
+    overflow: hidden;
+}
+
+.games__block-img img {            
+    width: 100%;
+}
+
+.games__block:nth-child(2n+1) .games__block-img {
+    order: 1;
+}
+
+/* __________  фоновые звезды  __________ */
+.games__img-1,
+.games__img-2,
+.games__img-3,
+.games__img-4 {
+    position: absolute;
+}
+
+.games__img-1 {
+    width: 36px;
+    transform: rotate(7.08deg);
+    top: 2370px;
+    right: 124px;
+}
+
+.games__img-2 {
+    width: 69px;
+    transform: rotate(7.08deg);
+    top: 2400px;
+    right: 45px;
+}
+
+.games__img-3 {
+    width: 69px;
+    top: 5640px;
+    right: 52px;
+}
+
+.games__img-4 {
+    width: 41px;
+    top: 5690px;
+    right: 150px;
+}
