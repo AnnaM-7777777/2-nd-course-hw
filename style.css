@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .center {
@@ -47,26 +48,24 @@ body {
     font-weight: 600;
 }
 
-.top__content a {
+.top__btn-link {
     text-decoration: none;
-}
-
-.top__btn {
     width: 247px;
     height: 66px;
     border: 1px solid #202027;
     border-radius: 60px;
     background-color: #202027;
-    color: #ffffff;
+    color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 24px;
-    text-align: center;
-    align-items: center;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.top__btn:hover {
+.top__btn-link:hover {
     background-color: #ffffff;
     color: #202027;
 }
@@ -312,10 +311,6 @@ body {
     font-size: 24px;
     line-height: 32px;
     margin-bottom: 36px;
-}
-
-.games__block-link {
-    text-decoration: none;
 }
 
 .games__block-btn {
