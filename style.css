@@ -375,3 +375,20 @@ body {
     top: 5690px;
     right: 150px;
 }
+
+
+/* __________  footer  __________ */
+.footer {
+    height: 150px;
+    background-color: #BDED35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.footer__heading {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
