@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+
+ /* __________  top  __________ */
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px;
+    padding-top: 196px;
+    box-sizing: border-box;
+    background-color: #E1FF8F;
+    color: #202027;
+    position: relative;
+}
+
+.top__heading {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    margin-bottom: 24px;
+}
+
+.top__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;    
+}
+
+.top__text_bottom {
+    margin-bottom: 48px;
+}
+
+.top__text span {
+    font-weight: 600;
+}
+
+.top__btn-link {
+    text-decoration: none;
+    width: 247px;
+    height: 66px;
+    border: 1px solid #202027;
+    border-radius: 60px;
+    background-color: #202027;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top__btn-link:hover {
+    background-color: #ffffff;
+    color: #202027;
+}
+
+/* __________  бегущая строка  __________ */
+.top__running-line {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 90px;
+    background-color: #BCEC30;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.top__running-line:hover .top__item {
+    animation-play-state: paused;
+}
+
+.top__item {
+    display: flex;
+    column-gap: 51px;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 19px;
+    padding-right: 30px;
+    user-select: none;
+    animation: scroll 30s linear infinite;
+}
+
+.top__item-text {
+    color: #202027;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.top__item-img {
+    width: 36px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+/* __________  фоновые звезды  __________ */
+.top__img-star-1,
+.top__img-star-2,
+.top__img-star-3,
+.top__img-star-4,
+.top__img-star-5 {
+    position: absolute;
+}
+
+.top__img-star-1 {
+    top: 0;
+    right: 0;
+}
+
+.top__img-star-2 {
+    width: 35px;
+    top: 69px;
+    left: 156px;
+}
+
+.top__img-star-3 {
+    width: 57px;
+    top: 94px;
+    left: 63px;
+}
+
+.top__img-star-4 {
+    width: 37px;
+    top: 535px;
+    right: 440px;
+}
+
+.top__img-star-5 {
+    width: 83px;
+    top: 565px;
+    right: 330px;
+}
+
+
+/* __________  info - блок «Об играх»  __________ */
+.info {
+    background-color: #202027;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.info__description {
+    color: #ffffff;
+    margin-bottom: 72px;
+}
+
+.info__heading {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    margin-bottom: 24px;
+}
+
+.info__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+/* __________  карточки с игрой  __________ */
+.info__games {
+    display: flex;
+    column-gap: 32px;
+}
+
+.info__box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.info__box-game {
+    width: 378px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    cursor: pointer;
+    z-index: 1;
+    text-decoration: none;
+    color: #202027;
+}
+
+.info__box-game:hover {
+    transform: scale(1.08);
+    transition: transform .7s;
+}
+
+.info__box-img {
+    overflow: hidden;
+}
+
+.info__box-text {
+    padding: 32px 45px 36px 32px;
+}
+
+.info__box-text p {
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-bottom: 26px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.info__box-text h3 {
+    font-size: 32px;
+    font-weight: 700;
+    word-break: break-word;
+}
+
+/* __________  фоновые звезды  __________ */
+.info__img-1,
+.info__img-2,
+.info__img-3 {
+    position: absolute;
+}
+
+.info__img-1 {
+    top: 877px;
+    right: 0;
+}
+
+.info__img-2 {
+    width: 32px;
+    transform: rotate(5.45deg);
+    top: 1580px;
+    left: 25px;
+}
+
+.info__img-3 {
+    width: 55px;
+    transform: rotate(5.45deg);
+    top: 1630px;
+    left: 40px;
+}
+
+
+/* __________  games - блок «Мини-игры»  __________ */
+.games {
+    background-color: #202027;
+    padding-top: 46px;
+    padding-bottom: 144px;
+}
+
+.games__heading {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFFFFF;
+    margin-bottom: 72px;
+}
+
+.games__conteiner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 500px);
+    grid-row-gap: 32px;
+}
+
+.games__block {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    color: #202027;
+    text-decoration: none;
+}
+
+.games__block-img {
+    background-color: #FFFFFF;
+}
+
+.games__block-text {    
+    background-color: #FFFFFF;
+    padding: 48px;
+}
+
+.games__block-text h3 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 24px;
+}
+
+.games__block-text p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 36px;
+}
+
+.games__block-btn {
+    width: 247px;
+    height: 66px;
+    border: 1px solid #202027;
+    border-radius: 60px;
+    background-color: #202027;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.games__block-btn:hover {
+    background-color: #ffffff;
+    color: #202027;
+}
+
+.games__block-img {            
+    overflow: hidden;
+}
+
+.games__block-img img {            
+    width: 100%;
+}
+
+.games__block:nth-child(2n+1) .games__block-img {
+    order: 1;
+}
+
+/* __________  фоновые звезды  __________ */
+.games__img-1,
+.games__img-2,
+.games__img-3,
+.games__img-4 {
+    position: absolute;
+}
+
+.games__img-1 {
+    width: 36px;
+    transform: rotate(7.08deg);
+    top: 2370px;
+    right: 124px;
+}
+
+.games__img-2 {
+    width: 69px;
+    transform: rotate(7.08deg);
+    top: 2400px;
+    right: 45px;
+}
+
+.games__img-3 {
+    width: 69px;
+    top: 5640px;
+    right: 52px;
+}
+
+.games__img-4 {
+    width: 41px;
+    top: 5690px;
+    right: 150px;
+}
+
+
+/* __________  footer  __________ */
+.footer {
+    height: 150px;
+    background-color: #BDED35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.footer__heading {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
