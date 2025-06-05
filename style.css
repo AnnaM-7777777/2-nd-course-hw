@@ -25,6 +25,13 @@ body {
     background-color: #E1FF8F;
     color: #202027;
     position: relative;
+    overflow: hidden;
+}
+
+.top__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .top__heading {
@@ -48,7 +55,7 @@ body {
     font-weight: 600;
 }
 
-.top__btn-link {
+.top__btn-link-desk {
     text-decoration: none;
     width: 247px;
     height: 66px;
@@ -63,12 +70,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
-.top__btn-link:hover {
+.top__btn-link-desk:hover {
     background-color: #ffffff;
     color: #202027;
 }
+
+.top__btn-link-mob {
+    display: none;
+}
+
 
 /* __________  бегущая строка  __________ */
 .top__running-line {
@@ -154,6 +167,10 @@ body {
     width: 83px;
     top: 565px;
     right: 330px;
+}
+
+.top__img-star-6 {
+    display: none;
 }
 
 
