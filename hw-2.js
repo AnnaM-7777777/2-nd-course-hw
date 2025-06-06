@@ -38,3 +38,12 @@ let lineBreak = '\n';
 alert(` сумма: ${sum}, ${lineBreak} разность: ${difference}, ${lineBreak} произведение: ${product}, ${lineBreak} частное: ${quotient}`);
 
 
+
+//_______________________ Задание 5 _______________________
+
+let numb = 2;
+let result = numb ** 5;
+
+alert(result);
+
+
