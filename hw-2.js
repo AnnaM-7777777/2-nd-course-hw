@@ -13,3 +13,11 @@ alert (a);
 let iPhone = 2007;
 alert (iPhone);
 
+
+
+//_______________________ Задание 3 _______________________
+
+let creator = 'Брендан Эйх';
+alert (creator);
+
+
