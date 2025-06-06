@@ -93,3 +93,9 @@ alert(user.age);
 alert(user.isAdmin);
 
 
+
+//_______________________ Задание 10 _______________________
+
+let userName = prompt('Как тебя зовут?');
+
+alert(`Привет, ${userName}`);
