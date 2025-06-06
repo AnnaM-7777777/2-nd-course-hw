@@ -21,6 +21,11 @@
         line-height: 24px;    
     }
 
+    .top__btn-link-desk:hover {
+        background-color: #202027;
+        color: #ffffff;
+    }
+
 
     /* __________  info - блок «Об играх»  __________ */
     .info__heading {
@@ -48,6 +53,10 @@
     .info__box-game {
         width: 336px;
         height: 460px;
+    }
+
+    .info__box-game:hover {
+        transform: scale(1);
     }
 
     .info__box-img img {
@@ -118,6 +127,11 @@
         height: 60px;
         font-weight: 500;
         font-size: 22px;
+    }
+
+    .games__block-btn:hover {
+        background-color: #202027;
+        color: #ffffff;
     }
 
     .games__block:nth-child(2n+1) .games__block-img {
