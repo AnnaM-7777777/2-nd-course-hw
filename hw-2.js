@@ -21,3 +21,20 @@ let creator = 'Брендан Эйх';
 alert (creator);
 
 
+
+//_______________________ Задание 4 _______________________
+
+let numBig = 10;
+let numSmall = 2;
+
+let sum = numBig + numSmall;
+let difference = numBig - numSmall;
+let product = numBig * numSmall;
+let quotient = numBig / numSmall;
+
+let lineBreak = '\n';
+
+//alert(`сумма: ` + sum + lineBreak + `разность: ` + difference + lineBreak + `произведение: ` + product + lineBreak + `частное: ` + quotient);
+alert(` сумма: ${sum}, ${lineBreak} разность: ${difference}, ${lineBreak} произведение: ${product}, ${lineBreak} частное: ${quotient}`);
+
+
