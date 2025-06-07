@@ -12,9 +12,12 @@
     }
 
     .top__content {
-        width: 343px;
         align-items: center;
         text-align: center;
+    }
+
+    .top__info {
+        width: 285px;
     }
 
     .top__heading {
@@ -123,12 +126,19 @@
         padding-bottom: 10px;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .games__heading {
         font-size: 40px;
         line-height: 49px;
         margin-bottom: 48px;
+    }
+
+    .games__box {
+        width: 343px;
+        display: flex;
+        flex-direction: column;
     }
 
     .games__conteiner {        
