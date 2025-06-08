@@ -71,9 +71,14 @@
         font-size: 24px;
     }
 
-    .info__img-1 {
-        top: 865px;
-        right: -30px;
+    .info__img-2 {
+        top: 2000px;
+        left: 25px;
+    }
+
+    .info__img-3 {
+        top: 2050px;
+        left: 40px;
     }
 
     
@@ -138,5 +143,24 @@
         order: 0;
     }
 
+    .games__img-1 {
+        top: 2680px;
+        right: 124px;
+    }
+
+    .games__img-2 {
+        top: 2720px;
+        right: 45px;
+    }
+
+    .games__img-3 {
+        top: 5010px;
+        right: 52px;
+    }
+
+    .games__img-4 {
+        top: 5070px;
+        right: 150px;
+    }
 
 }

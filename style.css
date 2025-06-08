@@ -181,6 +181,7 @@ body {
     background-color: #202027;
     padding-top: 94px;
     padding-bottom: 50px;
+    overflow: hidden;
 }
 
 .info__description {
@@ -282,6 +283,7 @@ body {
     background-color: #202027;
     padding-top: 46px;
     padding-bottom: 144px;
+    overflow: hidden;
 }
 
 .games__heading {
@@ -307,6 +309,7 @@ body {
     overflow: hidden;
     color: #202027;
     text-decoration: none;
+    z-index: 1;
 }
 
 .games__block-img {
@@ -407,6 +410,7 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .footer__heading {
