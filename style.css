@@ -222,11 +222,12 @@ body {
     z-index: 1;
     text-decoration: none;
     color: #202027;
+    transition: transform .7s;
 }
 
 .info__box-game:hover {
     transform: scale(1.08);
-    transition: transform .7s;
+    transition: transform 1s;
 }
 
 .info__box-img {
