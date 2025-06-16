@@ -31,3 +31,23 @@ evenOddNumber(28);
 evenOddNumber(7);
 
 
+//_______________________ Задание 3 _______________________
+
+function squareNumber1(number) {
+
+    const power = number ** 2;
+    console.log(power);
+}
+
+squareNumber1(3);
+squareNumber1(8);
+
+
+function squareNumber2(number) {
+    return console.log(number ** 2);
+}
+
+squareNumber2(5);
+squareNumber2(2);
+
+
