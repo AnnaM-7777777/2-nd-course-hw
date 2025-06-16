@@ -71,3 +71,22 @@ function howOld() {
 howOld();
 
 
+//_______________________ Задание 5 _______________________
+
+function checkingNumbers() {
+
+    const num1 = prompt('Введите первое число');
+    const num2 = prompt('Введите второе число');
+
+
+    if (isNaN(num1) || isNaN(num2)) {
+        return console.log('Одно или оба значения не являются числом');
+
+    } else {
+        return console.log(num1 * num2);
+    }
+}
+
+ checkingNumbers();
+
+
