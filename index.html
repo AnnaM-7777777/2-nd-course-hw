@@ -186,8 +186,26 @@
                     <div class="games__block-text">
                         <h3>Угадай число</h3>
                         <p>Попробуй угадать случайное число от 1 до 100.</p>
-                        <button class="games__block-btn">Играть!</button>
-                    </div>            
+                        <button class="games__block-btn" onclick="showPopup()">Играть!</button>
+                    </div>
+                    
+                    <!-- __________  окно игры №1  __________ -->
+                    <div class="games-show-popup" id="popup">                        
+                        <div class="games-show-popup__content-top">
+                            <h3 class="games-show-popup__heading">Угадай число от 1 до 100</h3>
+                            <button class="games-show-popup__btn-close" onclick="closePopup()">✖︎</button>
+                        </div>
+
+                        <div class="games-show-popup__content-botton">
+                            <div class="games-show-popup__btn">
+                                <button class="games-show-popup__btn-gen" id="generateButton">Сгенерировать</button>
+                                <input class="games-show-popup__input" id="guessInput" type="number" placeholder="Введите число">
+                                <button class="games-show-popup__btn-guess" id="guessButton">Угадать</button>
+                            </div>
+
+                            <p class="games-show-popup__message" id="message"></p>
+                        </div>                                               
+                    </div>
                 </div>
 
                 <div class="games__block" id="game2">
@@ -258,7 +276,9 @@
 
     <!-- <script src="hw-2.js"></script> -->
     <!-- <script src="hw-3.js"></script> -->
-    <script src="hw-4.js"></script>
+    <!-- <script src="hw-4.js"></script> -->
+    <script src="hw-5-game-1.js"></script>
+    <script src="hw-5.js"></script>
 </body>
 
 </html>

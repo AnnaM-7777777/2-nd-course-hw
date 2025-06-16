@@ -206,6 +206,60 @@
         right: 120px;
     }
 
+
+    /* __________  окно игры №1 в games - блок «Мини-игры»  __________ */
+    .games-show-popup {
+        padding: 29px;
+    }
+
+    .games-show-popup__content-top {
+        display: flex;
+        margin-bottom: 65px;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        margin-bottom: 55px;
+    }
+
+    .games-show-popup__heading {
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    .games-show-popup__btn-close {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        font-size: 14px;
+    }
+
+    .games-show-popup__btn {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        margin-bottom: 32px;
+    }
+
+    .games-show-popup__btn-gen,
+    .games-show-popup__btn-guess {
+        width: 285px;
+        height: 55px;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .games-show-popup__input {
+        width: 285px;
+        height: 55px;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .games-show-popup__message {
+        font-size: 18px;
+    }
+
+
+    /* __________  footer  __________ */
     .footer {
         height: 100px;
     }
