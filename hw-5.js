@@ -51,3 +51,23 @@ squareNumber2(5);
 squareNumber2(2);
 
 
+//_______________________ Задание 4 _______________________
+
+function howOld() {
+
+    let age = Number(prompt("Сколько Вам лет?"));
+
+    if (age < 0 || isNaN(age)) {
+        console.log('Вы ввели неправильное значение!');
+
+    } else if (age >= 0 && age < 13) {
+        console.log('Привет, друг!');
+
+    } else {
+        console.log('Добро пожаловать!')
+    }
+}
+
+howOld();
+
+
