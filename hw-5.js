@@ -108,3 +108,46 @@ function powerNumber() {
  powerNumber();
 
 
+//_______________________ Задание 7 _______________________
+
+const circle1 = {
+    radius: 7,
+    color: 'blue',  
+
+    getArea() {
+
+            return Math.PI * this.radius ** 2;
+    },
+
+    getPerimeter() {
+
+            return 2 * Math.PI * this.radius;
+    }
+};
+
+console.log(`Площадь круга:`, circle1.getArea());
+console.log(`Периметр окружности:`, circle1.getPerimeter());
+
+
+const circle2 = {
+    radius: 12,
+    color: 'green',  
+
+    getArea() {
+
+            return Math.PI * this.radius ** 2;
+    },
+
+    getPerimeter() {
+
+            return 2 * Math.PI * this.radius;
+    }
+};
+
+console.log(`Площадь круга:`, circle2.getArea());
+console.log(`Периметр окружности:`, circle2.getPerimeter());
+
+
+
+
+
