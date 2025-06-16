@@ -90,3 +90,21 @@ function checkingNumbers() {
  checkingNumbers();
 
 
+//_______________________ Задание 6 _______________________
+
+
+function powerNumber() {
+
+    const input = prompt('Введите число');
+
+    if (isNaN(input)) {
+        return console.log('Переданный параметр не является числом');
+
+    } else {
+        return console.log(`${input} в кубе равняется`, input ** 3);
+    }
+}
+
+ powerNumber();
+
+
