@@ -22,4 +22,8 @@ for (let i = 0; i < arr.length; i++) {
 	}
 }
 
+//_______________________ Задание 3 _______________________
 
+let num = [1, 3, 5, 10, 20];
+let joinNum = num.join(" ");
+console.log(joinNum);
