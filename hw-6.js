@@ -44,3 +44,10 @@ for (let item of arrays) {
         console.log(item);
     }
 }
+
+
+//_______________________ Задание 5 _______________________
+
+let array = [1, 1, 1];
+array.push(2, 2, 2);
+console.log(array);
