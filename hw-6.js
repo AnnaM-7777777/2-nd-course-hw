@@ -86,3 +86,13 @@ console.log(str.split('').reverse().join(''));
 const arrNum = [[1, 2, 3], [4, 5, 6]];
 const newArrNum = [].concat(...arrNum);
 console.log(newArrNum);
+
+
+//_______________________ Задание 10 _______________________
+
+const arrayNum = [2, 6, 1, 5, 4, 8];
+
+for (let i = 0; i < arrayNum.length - 1; i++) {
+    const sum = arrayNum[i] + arrayNum[i + 1];
+    console.log(sum);
+}
