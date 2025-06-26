@@ -1,6 +1,6 @@
 //_______________________ Задание 1 _______________________
 
-let numbers = [1, 5, 4, 10, 0, 3];
+const numbers = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < numbers.length; i++) {
     console.log(numbers[i]);
@@ -12,8 +12,8 @@ for (let i = 0; i < numbers.length; i++) {
 
 //_______________________ Задание 2 _______________________
 
-let arr = [1, 5, 4, 10, 0, 3];
-let val = 4;
+const arr = [1, 5, 4, 10, 0, 3];
+const val = 4;
 
 for (let i = 0; i < arr.length; i++) {
 	if (arr[i] === val) {
@@ -25,15 +25,15 @@ for (let i = 0; i < arr.length; i++) {
 
 //_______________________ Задание 3 _______________________
 
-let num = [1, 3, 5, 10, 20];
-let joinNum = num.join(" ");
+const num = [1, 3, 5, 10, 20];
+const joinNum = num.join(" ");
 
 console.log(joinNum);
 
 
 //_______________________ Задание 4 _______________________
 
-let arrays = [
+const arrays = [
     [1, 1, 1], 
     [2, 2, 2], 
     [3, 3, 3]
@@ -48,7 +48,7 @@ for (let item of arrays) {
 
 //_______________________ Задание 5 _______________________
 
-let array = [1, 1, 1];
+const array = [1, 1, 1];
 array.push(2, 2, 2);
 console.log(array);
 
@@ -63,13 +63,19 @@ console.log(filteredArr);
 
 //_______________________ Задание 7 _______________________
 
-let guessNum = [9, 8, 7, 6, 5];
-let inputNumber = prompt('Введите число');
-let number = parseInt(inputNumber);
-let isFound = guessNum.includes(number);
+const guessNum = [9, 8, 7, 6, 5];
+const inputNumber = prompt('Введите число');
+const number = parseInt(inputNumber);
+const isFound = guessNum.includes(number);
 
 if (isFound) {
     alert('Угадал');
     } else {
     alert('Не угадал');
 }
+
+
+//_______________________ Задание 8 _______________________
+
+const str = 'abcdef';
+console.log(str.split('').reverse().join(''));
