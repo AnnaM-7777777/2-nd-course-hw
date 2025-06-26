@@ -59,3 +59,17 @@ const sortArr = [9, 8, 7, 'a', 6, 5];
 sortArr.sort();
 const filteredArr = sortArr.filter(item => item !== 'a');
 console.log(filteredArr);
+
+
+//_______________________ Задание 7 _______________________
+
+let guessNum = [9, 8, 7, 6, 5];
+let inputNumber = prompt('Введите число');
+let number = parseInt(inputNumber);
+let isFound = guessNum.includes(number);
+
+if (isFound) {
+    alert('Угадал');
+    } else {
+    alert('Не угадал');
+}
