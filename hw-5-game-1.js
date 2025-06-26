@@ -1,11 +1,11 @@
 //_______________________ Генерация случайного числа от 1 до 100 _______________________
 
-function showPopup() {
-    document.getElementById('popup').style.display = 'block';
+function showPopupGame1() {
+    document.getElementById('popupGame1').style.display = 'block';
 }
 
-function closePopup() {
-    document.getElementById('popup').style.display = 'none';
+function closePopupGame1() {
+    document.getElementById('popupGame1').style.display = 'none';
 }
 
 
