@@ -79,3 +79,10 @@ if (isFound) {
 
 const str = 'abcdef';
 console.log(str.split('').reverse().join(''));
+
+
+//_______________________ Задание 9 _______________________
+
+const arrNum = [[1, 2, 3], [4, 5, 6]];
+const newArrNum = [].concat(...arrNum);
+console.log(newArrNum);
