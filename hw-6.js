@@ -51,3 +51,11 @@ for (let item of arrays) {
 let array = [1, 1, 1];
 array.push(2, 2, 2);
 console.log(array);
+
+
+//_______________________ Задание 6 _______________________
+
+const sortArr = [9, 8, 7, 'a', 6, 5];
+sortArr.sort();
+const filteredArr = sortArr.filter(item => item !== 'a');
+console.log(filteredArr);
