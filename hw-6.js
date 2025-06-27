@@ -130,3 +130,16 @@ function filteredNum(arrNumbers) {
 }
 
 console.log(filteredNum(arrNumbers));
+
+
+//_______________________ Задание 14 _______________________
+
+function generateRandomArray(length = 10) {
+    return Array.from({ length }, () => Math.floor(Math.random() * 11));
+}
+
+const originalArrayNum = generateRandomArray();
+const evenArrayNum = originalArrayNum.filter(num => num % 2 === 0);
+
+console.log("Сгенерирован исходный массив:", originalArrayNum);
+console.log("Массив с четными значениями:", evenArrayNum);
