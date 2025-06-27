@@ -31,7 +31,7 @@ const questionElement = document.getElementById('question');
             if (userAnswer === correctAnswer) {
                 resultElement.textContent = 'Правильно!';
             } else {
-                resultElement.textContent = `Неправильно. Правильный ответ: ${correctAnswer}`;
+                resultElement.textContent = `Неправильно! Правильный ответ: ${correctAnswer}`;
             }
 
             answerInput.value = '';
