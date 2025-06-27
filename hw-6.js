@@ -96,3 +96,14 @@ for (let i = 0; i < arrayNum.length - 1; i++) {
     const sum = arrayNum[i] + arrayNum[i + 1];
     console.log(sum);
 }
+
+
+//_______________________ Задание 11 _______________________
+
+const arrayNumbers = [10, 4, 5, 1, 3];
+
+function squareArray(arrayNumbers) {
+    return arrayNumbers.map(num => num ** 2);
+}
+
+console.log(squareArray(arrayNumbers));
