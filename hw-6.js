@@ -107,3 +107,14 @@ function squareArray(arrayNumbers) {
 }
 
 console.log(squareArray(arrayNumbers));
+
+
+//_______________________ Задание 12 _______________________
+
+const arrayWords = ["Кот", "Замок", "Платье", "Торт", "Юг", "Львёнок"];
+
+function lengthWords(arrayWords) {
+    return arrayWords.map(word => word.length);
+}
+
+console.log(lengthWords(arrayWords));
