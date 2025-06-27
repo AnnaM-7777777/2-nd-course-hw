@@ -118,3 +118,15 @@ function lengthWords(arrayWords) {
 }
 
 console.log(lengthWords(arrayWords));
+
+
+//_______________________ Задание 13 _______________________
+
+const arrNumbers = [5, 7, -6, 6, 3, -2, -9];
+
+function filteredNum(arrNumbers) {
+    /* arrNumbers.sort(); */
+    return arrNumbers.filter(num => num < 0);
+}
+
+console.log(filteredNum(arrNumbers));
