@@ -143,3 +143,17 @@ const evenArrayNum = originalArrayNum.filter(num => num % 2 === 0);
 
 console.log("Сгенерирован исходный массив:", originalArrayNum);
 console.log("Массив с четными значениями:", evenArrayNum);
+
+
+//_______________________ Задание 15 _______________________
+
+function generateRandomArr(length = 6) {
+    return Array.from({ length }, () => Math.floor(Math.random() * 11));
+}
+
+const originalArrNum = generateRandomArr();
+const meanArrNum = originalArrNum.reduce((total, number) => total + number, 0) / originalArrNum.length;
+
+console.log("Сгенерирован исходный массив:", originalArrNum);
+console.log("Среднее арифметическое элементов массива:", meanArrNum);
+
