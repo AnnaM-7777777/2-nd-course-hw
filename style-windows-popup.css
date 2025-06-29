@@ -1,0 +1,143 @@
+/* __________  окно игры №1 в games - блок «Мини-игры»  __________ */
+.games1-show-popup,
+.games2-show-popup,
+.games3-show-popup,
+.games4-show-popup,
+.games5-show-popup,
+.games6-show-popup  {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 2px solid #202027;
+    border-radius: 30px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 48px;
+}
+
+.games1-show-popup__content-top,
+.games2-show-popup__content-top,
+.games3-show-popup__content-top,
+.games4-show-popup__content-top,
+.games5-show-popup__content-top,
+.games6-show-popup__content-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.games1-show-popup__heading,
+.games2-show-popup__heading,
+.games3-show-popup__heading,
+.games4-show-popup__heading,
+.games5-show-popup__heading,
+.games6-show-popup__heading {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.games1-show-popup__btn-close,
+.games2-show-popup__btn-close,
+.games3-show-popup__btn-close,
+.games4-show-popup__btn-close,
+.games5-show-popup__btn-close,
+.games6-show-popup__btn-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #202027;
+    border-radius: 60px;
+    background-color: #202027;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.games1-show-popup__content-bottom,
+.games2-show-popup__content-bottom,
+.games3-show-popup__content-bottom,
+.games4-show-popup__content-bottom,
+.games5-show-popup__content-bottom,
+.games6-show-popup__content-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.games1-show-popup__btn,
+.games2-show-popup__btn {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.games1-show-popup__btn-gen,
+.games1-show-popup__btn-guess,
+.games2-show-popup__btn-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 247px;
+    height: 66px;
+    font-weight: 600;
+    font-size: 22px;
+    border: 1px solid #202027;
+    border-radius: 60px;
+    background-color: #202027;
+    color: #ffffff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.games1-show-popup__input,
+.games2-show-popup__input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 247px;
+    height: 66px;
+    font-weight: 600;
+    font-size: 22px;
+    border: 2px solid #202027;
+    border-radius: 60px;
+    background-color: #ffffff;
+    color: #202027;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    outline: none;
+    text-align: center;
+}
+
+.games1-show-popup__input::placeholder,
+.games2-show-popup__input::placeholder {
+    text-align: center;
+    color: #cccccc;
+}
+
+.games1-show-popup__message,
+.games2-show-popup__message {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+/* __________  окно игры №2 в games - блок «Мини-игры»  __________ */
+.games2-show-popup__random-example {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 48px;
+}
+
+.games2-show-popup__content-bottom {    
+    margin-top: 80px;
+}
