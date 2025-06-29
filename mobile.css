@@ -123,7 +123,7 @@
     /* __________  games - блок «Мини-игры»  __________ */
     .games {
         padding-top: 48px;
-        padding-bottom: 48px;
+        padding-bottom: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -208,96 +208,79 @@
 
 
     /* __________  окно игры №1 в games - блок «Мини-игры»  __________ */
-    .games1-show-popup,
-    .games2-show-popup,
-    .games3-show-popup,
-    .games4-show-popup,
-    .games5-show-popup,
-    .games6-show-popup {
+    .games-show-popup {
         padding: 29px;
     }
 
-    .games1-show-popup__content-top,
-    .games2-show-popup__content-top,
-    .games3-show-popup__content-top,
-    .games4-show-popup__content-top,
-    .games5-show-popup__content-top,
-    .games6-show-popup__content-top {
+    .games-show-popup__content-top {
         display: flex;
         margin-bottom: 65px;
         flex-direction: column-reverse;
         align-items: flex-end;
     }
 
-    .games1-show-popup__heading,
-    .games2-show-popup__heading,
-    .games3-show-popup__heading,
-    .games4-show-popup__heading,
-    .games5-show-popup__heading,
-    .games6-show-popup__heading {
+    .games-show-popup__heading {
         font-weight: 700;
         font-size: 32px;
     }
 
-    .games1-show-popup__btn-close,
-    .games2-show-popup__btn-close,
-    .games3-show-popup__btn-close,
-    .games4-show-popup__btn-close,
-    .games5-show-popup__btn-close,
-    .games6-show-popup__btn-close {
+    .games-show-popup__btn-close {
         width: 30px;
         height: 30px;
         border-radius: 30px;
         font-size: 14px;
     }
 
-    .games1-show-popup__content-bottom,
-    .games2-show-popup__content-bottom,
-    .games3-show-popup__content-bottom,
-    .games4-show-popup__content-bottom,
-    .games5-show-popup__content-bottom,
-    .games6-show-popup__content-bottom {
+    .games-show-popup__content-bottom-g1 {
         margin-top: 55px;
     }
 
-    .games1-show-popup__btn,
-    .games2-show-popup__btn {
+    .games-show-popup__btn {
         display: flex;
         flex-direction: column;
         gap: 22px;
         margin-bottom: 32px;
     }
 
-    .games1-show-popup__btn-gen,
-    .games1-show-popup__btn-guess,
-    .games2-show-popup__btn-check {
+    .games-show-popup__btn-gen,
+    .games-show-popup__btn-guess,
+    .games-show-popup__btn-check {
         width: 285px;
         height: 55px;
         font-weight: 600;
         font-size: 16px;
     }
 
-    .games1-show-popup__input,
-    .games2-show-popup__input {
+    .games-show-popup__input {
         width: 285px;
         height: 55px;
         font-weight: 600;
         font-size: 16px;
     }
 
-    .games1-show-popup__message,
-    .games2-show-popup__message {
+    .games-show-popup__message {
         font-size: 18px;
     }
 
+
     /* __________  окно игры №2 в games - блок «Мини-игры»  __________ */
-    .games2-show-popup__random-example {
+    .games-show-popup__random-example {
         font-size: 20px;
         margin-bottom: 32px;
     }
 
-    .games2-show-popup__content-bottom {    
+    .games-show-popup__content-bottom-g2 {    
         margin-top: 80px;
+    }
+
+
+    /* __________  окно игры №3 в games - блок «Мини-игры»  __________ */
+    .games-show-popup__content-bottom-g3 {
+        margin-top: 100px;
+    }
+
+    .games-show-popup__message_g3 {
+        margin-top: 70px;
     }
     
 

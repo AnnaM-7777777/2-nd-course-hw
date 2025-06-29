@@ -181,6 +181,8 @@
             <h2 class="games__heading">Мини-игры</h2>
 
             <div class="games__conteiner">
+
+                <!-- __________  игра №1  __________ -->
                 <div class="games__block" id="game1">
                     <div class="games__block-img"><img src="img/b3-1.png" alt="игра"></div>
 
@@ -191,24 +193,25 @@
                     </div>
                     
                     <!-- __________  окно игры №1  __________ -->
-                    <div class="games1-show-popup" id="popupGame1">                        
-                        <div class="games1-show-popup__content-top">
-                            <h3 class="games1-show-popup__heading">Угадай число от 1 до 100</h3>
-                            <button class="games1-show-popup__btn-close" onclick="closePopupGame1()">✖︎</button>
+                    <div class="games-show-popup" id="popupGame1">                        
+                        <div class="games-show-popup__content-top">
+                            <h3 class="games-show-popup__heading">Угадай число от 1 до 100</h3>
+                            <button class="games-show-popup__btn-close" onclick="closePopupGame1()">✖︎</button>
                         </div>
 
-                        <div class="games1-show-popup__content-bottom">
-                            <div class="games1-show-popup__btn">
-                                <button class="games1-show-popup__btn-gen" id="generateButton">Сгенерировать</button>
-                                <input class="games1-show-popup__input" id="guessInput" type="number" placeholder="Введите число">
-                                <button class="games1-show-popup__btn-guess" id="guessButton">Угадать</button>
+                        <div class="games-show-popup__content-bottom-g1">
+                            <div class="games-show-popup__btn">
+                                <button class="games-show-popup__btn-gen" id="generateButton">Сгенерировать</button>
+                                <input class="games-show-popup__input" id="guessInput" type="number" placeholder="Введите число">
+                                <button class="games-show-popup__btn-guess" id="guessButton">Угадать</button>
                             </div>
 
-                            <p class="games1-show-popup__message" id="message"></p>
+                            <p class="games-show-popup__message" id="message"></p>
                         </div>                                               
                     </div>
                 </div>
 
+                <!-- __________  игра №2  __________ -->
                 <div class="games__block" id="game2">
                     <div class="games__block-img"><img src="img/b3-2.png" alt="игра"></div>
 
@@ -219,33 +222,47 @@
                     </div>
                     
                     <!-- __________  окно игры №2  __________ -->
-                    <div class="games2-show-popup" id="popupGame2">                        
-                        <div class="games2-show-popup__content-top">
-                            <h3 class="games2-show-popup__heading">Простая арифметика</h3>
-                            <button class="games2-show-popup__btn-close" onclick="closePopupGame2()">✖︎</button>
+                    <div class="games-show-popup" id="popupGame2">                        
+                        <div class="games-show-popup__content-top">
+                            <h3 class="games-show-popup__heading">Простая арифметика</h3>
+                            <button class="games-show-popup__btn-close" onclick="closePopupGame2()">✖︎</button>
                         </div>
 
-                        <div class="games2-show-popup__content-bottom">
-                            <div class="games2-show-popup__random-example" id="question"></div>
+                        <div class="games-show-popup__content-bottom-g2">
+                            <div class="games-show-popup__random-example" id="question"></div>
 
-                            <div class="games2-show-popup__btn">
-                                <input class="games2-show-popup__input" type="text" id="answerInput">
-                                <button class="games2-show-popup__btn-check" id="submitButton">Проверить</button>
+                            <div class="games-show-popup__btn">
+                                <input class="games-show-popup__input" type="text" id="answerInput">
+                                <button class="games-show-popup__btn-check" id="submitButton">Проверить</button>
                             </div>
 
-                            <div class="games2-show-popup__message" id="result"></div>
+                            <div class="games-show-popup__message" id="result"></div>
                         </div>                                               
                     </div>
                 </div>
 
+                <!-- __________  игра №3  __________ -->
                 <div class="games__block" id="game3">
                     <div class="games__block-img"><img src="img/b3-3.png" alt="игра"></div>
 
                     <div class="games__block-text">
                         <h3>Переверни текст</h3>
                         <p>Попробуй ввести текст, который будет перевернут.</p>
-                        <button class="games__block-btn">Играть!</button>
-                    </div>            
+                        <button class="games__block-btn" onclick="showPopupGame3()">Играть!</button>
+                    </div>
+                    
+                    <!-- __________  окно игры №3  __________ -->
+                    <div class="games-show-popup" id="popupGame3">                        
+                        <div class="games-show-popup__content-top">
+                            <h3 class="games-show-popup__heading">Переверни текст</h3>
+                            <button class="games-show-popup__btn-close" onclick="closePopupGame3()">✖︎</button>
+                        </div>
+
+                        <div class="games-show-popup__content-bottom-g3">
+                            <button class="games-show-popup__btn-guess" onclick="showPrompt()">Ввести слово</button>
+                            <p class="games-show-popup__message games-show-popup__message_g3" id="output"></p>
+                        </div>                                           
+                    </div>
                 </div>
 
                 <div class="games__block" id="game4">
@@ -298,10 +315,12 @@
     <!-- <script src="hw-3.js"></script> -->
     <!-- <script src="hw-4.js"></script> -->
     <!-- <script src="hw-5.js"></script> -->
-    <script src="hw-6.js"></script>
+    <!-- <script src="hw-6.js"></script> -->
+    <!-- <script src="hw-7.js"></script> -->
 
     <script src="hw-5-game-1.js"></script>
     <script src="hw-6-game-2.js"></script>
+    <script src="hw-7-game-3.js"></script>
 </body>
 
 </html>

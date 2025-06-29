@@ -1,10 +1,5 @@
 /* __________  окно игры №1 в games - блок «Мини-игры»  __________ */
-.games1-show-popup,
-.games2-show-popup,
-.games3-show-popup,
-.games4-show-popup,
-.games5-show-popup,
-.games6-show-popup  {
+.games-show-popup  {
     display: none;
     position: absolute;
     background-color: #ffffff;
@@ -18,32 +13,17 @@
     padding: 48px;
 }
 
-.games1-show-popup__content-top,
-.games2-show-popup__content-top,
-.games3-show-popup__content-top,
-.games4-show-popup__content-top,
-.games5-show-popup__content-top,
-.games6-show-popup__content-top {
+.games-show-popup__content-top {
     display: flex;
     justify-content: space-between;
 }
 
-.games1-show-popup__heading,
-.games2-show-popup__heading,
-.games3-show-popup__heading,
-.games4-show-popup__heading,
-.games5-show-popup__heading,
-.games6-show-popup__heading {
+.games-show-popup__heading {
     font-weight: 700;
     font-size: 48px;
 }
 
-.games1-show-popup__btn-close,
-.games2-show-popup__btn-close,
-.games3-show-popup__btn-close,
-.games4-show-popup__btn-close,
-.games5-show-popup__btn-close,
-.games6-show-popup__btn-close {
+.games-show-popup__btn-close {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,28 +39,22 @@
     cursor: pointer;
 }
 
-.games1-show-popup__content-bottom,
-.games2-show-popup__content-bottom,
-.games3-show-popup__content-bottom,
-.games4-show-popup__content-bottom,
-.games5-show-popup__content-bottom,
-.games6-show-popup__content-bottom {
+.games-show-popup__content-bottom-g1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 130px;
 }
 
-.games1-show-popup__btn,
-.games2-show-popup__btn {
+.games-show-popup__btn {
     display: flex;
     gap: 32px;
     margin-bottom: 48px;
 }
 
-.games1-show-popup__btn-gen,
-.games1-show-popup__btn-guess,
-.games2-show-popup__btn-check {
+.games-show-popup__btn-gen,
+.games-show-popup__btn-guess,
+.games-show-popup__btn-check {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,8 +71,7 @@
     box-sizing: border-box;
 }
 
-.games1-show-popup__input,
-.games2-show-popup__input {
+.games-show-popup__input {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,26 +91,41 @@
     text-align: center;
 }
 
-.games1-show-popup__input::placeholder,
-.games2-show-popup__input::placeholder {
+.games-show-popup__input::placeholder{
     text-align: center;
     color: #cccccc;
 }
 
-.games1-show-popup__message,
-.games2-show-popup__message {
+.games-show-popup__message {
     font-weight: 600;
     font-size: 24px;
 }
 
 
 /* __________  окно игры №2 в games - блок «Мини-игры»  __________ */
-.games2-show-popup__random-example {
+.games-show-popup__random-example {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 48px;
 }
 
-.games2-show-popup__content-bottom {    
+.games-show-popup__content-bottom-g2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 80px;
+}
+
+
+/* __________  окно игры №3 в games - блок «Мини-игры»  __________ */
+.games-show-popup__content-bottom-g3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.games-show-popup__message_g3 {
+    margin-top: 50px;
 }
