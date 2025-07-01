@@ -229,4 +229,13 @@
         margin-bottom: 32px;
     }
 
+    /* __________  окно игры №3 в games - блок «Мини-игры»  __________ */
+    .games-show-popup__content-bottom-g3 {
+        margin-top: 70px;
+    }
+
+    /* __________  окно игры №5 в games - блок «Мини-игры»  __________ */
+    .games-show-popup__content-bottom-g5 {
+        margin-top: 100px;
+    }
 }
