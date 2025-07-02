@@ -63,3 +63,20 @@ function generateRandomArray(maxNumber) {
 }
 
 console.log(randomArray);
+
+
+//_______________________ Задание 7 _______________________
+
+const minNum = 4;
+const maxNum = 13;
+
+function generateRandomNum(minNum, maxNum) {
+    if (minNum >= maxNum) {
+        throw new Error('Первое число должно быть меньше второго');
+    }
+
+    return Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
+}
+
+const randomNumber = generateRandomNum(minNum, maxNum);
+console.log(randomNumber);
