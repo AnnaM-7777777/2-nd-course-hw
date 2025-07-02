@@ -32,3 +32,13 @@ console.log(Math.round(fractionalNumber));
 
 console.log(Math.min(52, 53, 49, 77, 21, 32));
 console.log(Math.max(52, 53, 49, 77, 21, 32));
+
+
+//_______________________ Задание 5 _______________________
+
+function generateRandomNumber() {
+    const randomNumber = Math.floor(Math.random() * 10) + 1;
+    console.log(randomNumber);
+}
+
+generateRandomNumber();
