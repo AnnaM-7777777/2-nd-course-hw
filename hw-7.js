@@ -42,3 +42,24 @@ function generateRandomNumber() {
 }
 
 generateRandomNumber();
+
+
+//_______________________ Задание 6 _______________________
+
+/* const maxNumber = Math.floor(Math.random() * 10) + 1; */  //генерация любого случайного числа от 1 до 10
+const maxNumber = 8; //конкретное заданное число
+const randomArray = generateRandomArray(maxNumber);
+
+function generateRandomArray(maxNumber) {
+    const arrayLength = Math.floor(maxNumber / 2); // длина массива в два раза меньше переданного числа
+    const randomArray = [];
+
+    for (let i = 0; i < arrayLength; i++) {
+        const randomNumber = Math.floor(Math.random() * (maxNumber + 1)); // Генерация случайного числа от 0 до maxNumber включительно
+        randomArray.push(randomNumber);
+    }
+
+    return randomArray;
+}
+
+console.log(randomArray);
