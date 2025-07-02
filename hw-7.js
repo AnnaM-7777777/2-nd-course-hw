@@ -80,3 +80,9 @@ function generateRandomNum(minNum, maxNum) {
 
 const randomNumber = generateRandomNum(minNum, maxNum);
 console.log(randomNumber);
+
+
+//_______________________ Задание 8 _______________________
+
+let todayDate = new Date();
+console.log(todayDate);
