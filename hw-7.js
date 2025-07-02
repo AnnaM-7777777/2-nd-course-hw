@@ -84,5 +84,14 @@ console.log(randomNumber);
 
 //_______________________ Задание 8 _______________________
 
-let todayDate = new Date();
-console.log(todayDate);
+const myDate = new Date();
+console.log(myDate);
+
+
+//_______________________ Задание 9 _______________________
+
+const currentDate = new Date();
+const daysFuture73 = new Date(currentDate.getTime() + 73 * 24 * 60 * 60 * 1000);
+
+console.log(daysFuture73);
+
