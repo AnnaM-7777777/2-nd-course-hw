@@ -20,3 +20,9 @@ function filterByPrefix(arrFruits, strPrefix) {
 console.log(filterByPrefix(arrFruits, strPrefix));
 
 
+//_______________________ Задание 3 _______________________
+
+let fractionalNumber = 32.58884;
+console.log(Math.floor(fractionalNumber));
+console.log(Math.ceil(fractionalNumber));
+console.log(Math.round(fractionalNumber));
