@@ -236,7 +236,7 @@
                                 <button class="games-show-popup__btn-check" id="submitButton">Проверить</button>
                             </div>
 
-                            <div class="games-show-popup__message" id="result"></div>
+                            <p class="games-show-popup__message" id="result"></p>
                         </div>                                               
                     </div>
                 </div>
@@ -272,8 +272,26 @@
                     <div class="games__block-text">
                         <h3>Камень, ножницы, бумага</h3>
                         <p>Сыграй в популярную игру против компьютера.</p>
-                        <button class="games__block-btn">Играть!</button>
-                    </div>                  
+                        <button class="games__block-btn" onclick="showPopupGame4()">Играть!</button>
+                    </div>
+                    
+                    <!-- __________  окно игры №4  __________ -->
+                    <div class="games-show-popup" id="popupGame4">                        
+                        <div class="games-show-popup__content-top">
+                            <h3 class="games-show-popup__heading">Камень, ножницы, бумага</h3>
+                            <button class="games-show-popup__btn-close" onclick="closePopupGame4()">✖︎</button>
+                        </div>
+
+                        <div class="games-show-popup__content-bottom-g4">
+                            <button class="games-show-popup__btn-guess" id="playButton">Начать игру</button>
+
+                            <div class="games-show-popup__message games-show-popup__message_g4">
+                                <h4 class="games-show-popup__heading-h4">Результат игры:</h4>
+                                <div id="resultGame"></div>
+                            </div>
+                                
+                        </div>                                           
+                    </div>
                 </div>
 
                 <!-- __________  игра №5  __________ -->
@@ -329,6 +347,7 @@
     <script src="hw-5-game-1.js"></script>
     <script src="hw-6-game-2.js"></script>
     <script src="hw-7-game-3.js"></script>
+    <script src="hw-8-game-4.js"></script>
     <script src="hw-7-game-5.js"></script>
 </body>
 

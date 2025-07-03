@@ -209,10 +209,6 @@
         border-radius: 30px;
     }
 
-    .games-show-popup__message {
-        font-size: 22px;
-    }
-
 
     /* __________  окно игры №2 в games - блок «Мини-игры»  __________ */
     .games-show-popup__random-example {
@@ -229,10 +225,29 @@
         margin-bottom: 32px;
     }
 
+
     /* __________  окно игры №3 в games - блок «Мини-игры»  __________ */
     .games-show-popup__content-bottom-g3 {
         margin-top: 70px;
     }
+    
+
+    /* __________  окно игры №4 в games - блок «Мини-игры»  __________ */
+    .games-show-popup__content-bottom-g4 {        
+        gap: 32px;
+        margin-top: 32px;
+    }
+
+    .games-show-popup__message_g4 {
+        width: 420px;
+        height: 200px;
+        padding: 24px;
+    }
+
+    .games-show-popup__heading-h4 {
+        font-size: 24px;
+    }
+
 
     /* __________  окно игры №5 в games - блок «Мини-игры»  __________ */
     .games-show-popup__content-bottom-g5 {

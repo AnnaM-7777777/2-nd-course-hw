@@ -95,3 +95,15 @@ const daysFuture73 = new Date(currentDate.getTime() + 73 * 24 * 60 * 60 * 1000);
 
 console.log(daysFuture73);
 
+
+//_______________________ Задание 10 _______________________
+
+const daysWeek = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+const myDateNow = new Date();
+
+const todayDate = `Дата: ${myDateNow.getDate()} ${months[myDateNow.getMonth()]} ${myDateNow.getFullYear()} - это ${daysWeek[myDateNow.getDay()]}`;
+const todayTime = `Время: ${myDateNow.getHours()}:${myDateNow.getMinutes().toString().padStart(2, '0')}:${myDateNow.getSeconds().toString().padStart(2, '0')}`;
+
+console.log(`${todayDate} \n${todayTime}`);
+

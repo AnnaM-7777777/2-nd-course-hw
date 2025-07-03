@@ -98,7 +98,7 @@
 
 .games-show-popup__message {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 
@@ -128,6 +128,32 @@
 
 .games-show-popup__message_g3 {
     margin-top: 50px;
+}
+
+/* __________  окно игры №4 в games - блок «Мини-игры»  __________ */
+.games-show-popup__content-bottom-g4 {
+    display: flex;
+    gap: 150px;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.games-show-popup__message_g4 {
+    margin-top: 0;
+    width: 430px;
+    height: 220px;
+    padding: 32px;
+    box-sizing: border-box;
+    border: 1px solid #202027;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.games-show-popup__heading-h4 {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 32px;
 }
 
 

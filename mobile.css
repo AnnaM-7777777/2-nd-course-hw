@@ -278,6 +278,28 @@
     .games-show-popup__content-bottom-g3 {
         margin-top: 130px;
     }
+    
+    
+    /* __________  окно игры №4 в games - блок «Мини-игры»  __________ */
+    .games-show-popup__content-bottom-g4 {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 70px;
+        margin-top: 70px;
+    }
+
+    .games-show-popup__message_g4 {
+        width: auto;
+        height: auto;
+        padding: 0;
+        border: none;
+    }
+
+    .games-show-popup__heading-h4 {
+        font-size: 22px;
+    }
+
 
     /* __________  окно игры №5 в games - блок «Мини-игры»  __________ */
     .games-show-popup__content-bottom-g5 {
