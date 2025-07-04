@@ -16,8 +16,8 @@ btnElement.addEventListener('click', function() {
 
 //_______________________ Задание 2 _______________________
 
-const textColorElement = document.querySelector('#textColor');
 const btnColorElement = document.querySelector('#btnColor');
+const textColorElement = document.querySelector('#textColor');
 
 btnColorElement.addEventListener('click', function() {
     if (textColorElement.style.color === '') {
@@ -25,4 +25,14 @@ btnColorElement.addEventListener('click', function() {
     } else {
         textColorElement.style.color = '';
     }
+});
+
+
+//_______________________ Задание 3 _______________________
+
+const btnChangeElement = document.querySelector('#btnChange');
+const textChangeElement = document.querySelector('#textChange');
+
+btnChangeElement.addEventListener('click', function() {
+    textChangeElement.textContent = 'Привет, мир!';
 });
