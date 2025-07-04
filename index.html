@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Homework1</title>
+    <link rel="stylesheet" href="style-windows-popup.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>Сайт мини-игр</title>
 </head>
 
 <body>
@@ -16,10 +19,13 @@
     <!-- __________  top  __________ -->
     <div class="top">     
         <div class="top__content center">
-            <h1 class="top__heading">Добро пожаловать <br> на мой сайт мини-игр</h1>
-            <p class="top__text">Тебе предстоит пройти несколько увлекательных игр.</p>
-            <p class="top__text top__text_bottom">Если готов, нажимай <span>«Поехали!»</span> и <span>приступай</span>.</p>
-            <a class="top__btn-link" href="#infoGames">Поехали!</a>
+            <div class="top__info">
+                <h1 class="top__heading">Добро пожаловать <br> на мой сайт мини-игр</h1>
+                <p class="top__text">Тебе предстоит пройти несколько увлекательных игр.</p>
+                <p class="top__text top__text_bottom">Если готов, нажимай <span>«Поехали!»</span> и <span>приступай</span>.</p>
+                <a class="top__btn-link-desk" href="#infoGamesD">Поехали!</a>
+                <a class="top__btn-link-mob" href="#infoGamesM">Поехали!</a>
+            </div>
         </div>
 
         <!-- __________  бегущая строка  __________ -->
@@ -66,16 +72,17 @@
         </div>
 
         <!-- __________  фоновые звезды  __________ -->
-        <img class="top__img-star-1" src="img-top/star-1.png" alt="star">
+        <img class="top__img-star-1" src="img-top/star-big-1.png" alt="star">
         <img class="top__img-star-2" src="img-top/star-2.png" alt="star">
         <img class="top__img-star-3" src="img-top/star-3.png" alt="star">
         <img class="top__img-star-4" src="img-top/star-3.png" alt="star">
         <img class="top__img-star-5" src="img-top/star-2.png" alt="star">
+        <img class="top__img-star-6" src="img-top/star-mob.png" alt="star">
     </div>
 
 
     <!-- __________  info - блок «Об играх»  __________ -->
-    <div class="info center" id="infoGames">
+    <div class="info center" id="infoGamesD">
         <div class="info__description">
             <h2 class="info__heading">Об играх</h2>
             <p class="info__text">В моей коллекции представлено 6 игр на разные темы.</p>
@@ -169,70 +176,158 @@
 
 
     <!-- __________  games - блок «Мини-игры»  __________ -->
-    <div class="games center">
-        <h2 class="games__heading">Мини-игры</h2>
+    <div class="games center" id="infoGamesM">
+        <div class="games__box">            
+            <h2 class="games__heading">Мини-игры</h2>
 
-        <div class="games__conteiner">
-            <div class="games__block" id="game1">
-                <div class="games__block-img"><img src="img/b3-1.png" alt="игра"></div>
+            <div class="games__conteiner">
 
-                <div class="games__block-text">
-                    <h3>Угадай число</h3>
-                    <p>Попробуй угадать случайное число от 1 до 100.</p>
-                    <button class="games__block-btn">Играть!</button>
-                </div>            
+                <!-- __________  игра №1  __________ -->
+                <div class="games__block" id="game1">
+                    <div class="games__block-img"><img src="img/b3-1.png" alt="игра"></div>
+
+                    <div class="games__block-text">
+                        <h3>Угадай число</h3>
+                        <p>Попробуй угадать случайное число от 1 до 100.</p>
+                        <button class="games__block-btn" onclick="showPopupGame1()">Играть!</button>
+                    </div>
+                    
+                    <!-- __________  окно игры №1  __________ -->
+                    <div class="games-show-popup" id="popupGame1">                        
+                        <div class="games-show-popup__content-top">
+                            <h3 class="games-show-popup__heading">Угадай число от 1 до 100</h3>
+                            <button class="games-show-popup__btn-close" onclick="closePopupGame1()">✖︎</button>
+                        </div>
+
+                        <div class="games-show-popup__content-bottom-g1">
+                            <div class="games-show-popup__btn">
+                                <button class="games-show-popup__btn-gen" id="generateButton">Сгенерировать</button>
+                                <input class="games-show-popup__input" id="guessInput" type="number" placeholder="Введите число">
+                                <button class="games-show-popup__btn-guess" id="guessButton">Угадать</button>
+                            </div>
+
+                            <p class="games-show-popup__message" id="message"></p>
+                        </div>                                               
+                    </div>
+                </div>
+
+                <!-- __________  игра №2  __________ -->
+                <div class="games__block" id="game2">
+                    <div class="games__block-img"><img src="img/b3-2.png" alt="игра"></div>
+
+                    <div class="games__block-text">
+                        <h3>Простая арифметика</h3>
+                        <p>Попробуй решить простые арифметические задачи.</p>
+                        <button class="games__block-btn" onclick="showPopupGame2()">Играть!</button>
+                    </div>
+                    
+                    <!-- __________  окно игры №2  __________ -->
+                    <div class="games-show-popup" id="popupGame2">                        
+                        <div class="games-show-popup__content-top">
+                            <h3 class="games-show-popup__heading">Простая арифметика</h3>
+                            <button class="games-show-popup__btn-close" onclick="closePopupGame2()">✖︎</button>
+                        </div>
+
+                        <div class="games-show-popup__content-bottom-g2">
+                            <div class="games-show-popup__random-example" id="question"></div>
+
+                            <div class="games-show-popup__btn">
+                                <input class="games-show-popup__input" type="text" id="answerInput">
+                                <button class="games-show-popup__btn-check" id="submitButton">Проверить</button>
+                            </div>
+
+                            <p class="games-show-popup__message" id="result"></p>
+                        </div>                                               
+                    </div>
+                </div>
+
+                <!-- __________  игра №3  __________ -->
+                <div class="games__block" id="game3">
+                    <div class="games__block-img"><img src="img/b3-3.png" alt="игра"></div>
+
+                    <div class="games__block-text">
+                        <h3>Переверни текст</h3>
+                        <p>Попробуй ввести текст, который будет перевернут.</p>
+                        <button class="games__block-btn" onclick="showPopupGame3()">Играть!</button>
+                    </div>
+                    
+                    <!-- __________  окно игры №3  __________ -->
+                    <div class="games-show-popup" id="popupGame3">                        
+                        <div class="games-show-popup__content-top">
+                            <h3 class="games-show-popup__heading">Переверни текст</h3>
+                            <button class="games-show-popup__btn-close" onclick="closePopupGame3()">✖︎</button>
+                        </div>
+
+                        <div class="games-show-popup__content-bottom-g3">
+                            <button class="games-show-popup__btn-guess" onclick="showPrompt()">Ввести слово</button>
+                            <p class="games-show-popup__message games-show-popup__message_g3" id="output"></p>
+                        </div>                                           
+                    </div>
+                </div>
+
+                <!-- __________  игра №4  __________ -->
+                <div class="games__block" id="game4">
+                    <div class="games__block-img"><img src="img/b3-4.png" alt="игра"></div>
+
+                    <div class="games__block-text">
+                        <h3>Камень, ножницы, бумага</h3>
+                        <p>Сыграй в популярную игру против компьютера.</p>
+                        <button class="games__block-btn" onclick="showPopupGame4()">Играть!</button>
+                    </div>
+                    
+                    <!-- __________  окно игры №4  __________ -->
+                    <div class="games-show-popup" id="popupGame4">                        
+                        <div class="games-show-popup__content-top">
+                            <h3 class="games-show-popup__heading">Камень, ножницы, бумага</h3>
+                            <button class="games-show-popup__btn-close" onclick="closePopupGame4()">✖︎</button>
+                        </div>
+
+                        <div class="games-show-popup__content-bottom-g4">
+                            <button class="games-show-popup__btn-guess" id="playButton">Начать игру</button>
+
+                            <div class="games-show-popup__message games-show-popup__message_g4">
+                                <h4 class="games-show-popup__heading-h4">Результат игры:</h4>
+                                <div id="resultGame"></div>
+                            </div>
+                                
+                        </div>                                           
+                    </div>
+                </div>
+
+                <!-- __________  игра №5  __________ -->
+                <div class="games__block" id="game5">
+                    <div class="games__block-img"><img src="img/b3-5.png" alt="игра"></div>
+
+                    <div class="games__block-text">
+                        <h3>Простая викторина</h3>
+                        <p>Отвечай на вопросы викторины с вариантами ответов.</p>
+                        <button class="games__block-btn" onclick="showPopupGame5()">Играть!</button>
+                    </div>
+                    
+                    <!-- __________  окно игры №5  __________ -->
+                    <div class="games-show-popup" id="popupGame5">                        
+                        <div class="games-show-popup__content-top">
+                            <h3 class="games-show-popup__heading">Простая викторина</h3>
+                            <button class="games-show-popup__btn-close" onclick="closePopupGame5()">✖︎</button>
+                        </div>
+
+                        <div class="games-show-popup__content-bottom-g5">
+                            <button class="games-show-popup__btn-guess" onclick="answerPrompt()">Начать</button>
+                        </div>                                           
+                    </div>
+                </div>
+
+                <!-- __________  игра №6  __________ -->
+                <div class="games__block" id="game6">
+                    <div class="games__block-img"><img src="img/b3-6.png" alt="игра"></div>
+
+                    <div class="games__block-text">
+                        <h3>Генератор случайных цветов</h3>
+                        <p>Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                        <button class="games__block-btn">Играть!</button>
+                    </div>            
+                </div>          
             </div>
-
-            <div class="games__block" id="game2">
-                <div class="games__block-img"><img src="img/b3-2.png" alt="игра"></div>
-
-                <div class="games__block-text">
-                    <h3>Простая арифметика</h3>
-                    <p>Попробуй решить простые арифметические задачи.</p>
-                    <button class="games__block-btn">Играть!</button>
-                </div>            
-            </div>
-
-            <div class="games__block" id="game3">
-                <div class="games__block-img"><img src="img/b3-3.png" alt="игра"></div>
-
-                <div class="games__block-text">
-                    <h3>Переверни текст</h3>
-                    <p>Попробуй ввести текст, который будет перевернут.</p>
-                    <button class="games__block-btn">Играть!</button>
-                </div>            
-            </div>
-
-            <div class="games__block" id="game4">
-                <div class="games__block-img"><img src="img/b3-4.png" alt="игра"></div>
-
-                <div class="games__block-text">
-                    <h3>Камень, ножницы, бумага</h3>
-                    <p>Сыграй в популярную игру против компьютера.</p>
-                    <button class="games__block-btn">Играть!</button>
-                </div>            
-                <input type="text">
-            </div>
-
-            <div class="games__block" id="game5">
-                <div class="games__block-img"><img src="img/b3-5.png" alt="игра"></div>
-
-                <div class="games__block-text">
-                    <h3>Простая викторина</h3>
-                    <p>Отвечай на вопросы викторины с вариантами ответов.</p>
-                    <button class="games__block-btn">Играть!</button>
-                </div>            
-            </div>
-
-            <div class="games__block" id="game6">
-                <div class="games__block-img"><img src="img/b3-6.png" alt="игра"></div>
-
-                <div class="games__block-text">
-                    <h3>Генератор случайных цветов</h3>
-                    <p>Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                    <button class="games__block-btn">Играть!</button>
-                </div>            
-            </div>          
         </div>
 
         <!-- __________  фоновые звезды  __________ -->
@@ -247,7 +342,14 @@
     <footer class="footer">
         <h4 class="footer__heading">Все права защищены.</h4>
     </footer>
+    
 
+    <script src="hw-5-game-1.js"></script>
+    <script src="hw-6-game-2.js"></script>
+    <script src="hw-7-game-3.js"></script>
+    <script src="hw-8-game-4.js"></script>
+    <script src="hw-7-game-5.js"></script>
 </body>
 
 </html>
+
