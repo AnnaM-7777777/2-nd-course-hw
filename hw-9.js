@@ -14,4 +14,15 @@ btnElement.addEventListener('click', function() {
 });
 
 
+//_______________________ Задание 2 _______________________
 
+const textColorElement = document.querySelector('#textColor');
+const btnColorElement = document.querySelector('#btnColor');
+
+btnColorElement.addEventListener('click', function() {
+    if (textColorElement.style.color === '') {
+        textColorElement.style.color = 'blue';
+    } else {
+        textColorElement.style.color = '';
+    }
+});
