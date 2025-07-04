@@ -42,4 +42,19 @@ const menAndWomen = [
 console.log(menAndWomen.filter(isMale).map(human => `${human.name}: ${human.gender}`));
 
 
+//_______________________ Задание 3 _______________________
+
+function currentDate() {
+    const timeInterval = setInterval(() => {
+        console.log(new Date());
+    }, 3000); // Интервал в 3 секунды
+
+    setTimeout(() => {
+        clearInterval(timeInterval); // Останавливаем интервал
+        console.log('30 секунд прошло');
+    }, 30000); // Через 30 секунд
+}
+
+currentDate();
+
 
