@@ -58,3 +58,12 @@ function currentDate() {
 currentDate();
 
 
+//_______________________ Задание 4 _______________________
+
+function delayForSecond(callback) {
+    setTimeout(callback, 1000); // Вызов callback через 1 секунду
+}
+
+delayForSecond(function () {
+    console.log('Привет, Глеб!');
+});
