@@ -64,3 +64,14 @@ btnChangeTextAll.forEach(btn => {
         });
     });
 });
+
+
+//_______________________ Задание 6 _______________________
+
+const btnAddElement = document.getElementById('btnAdd');
+
+btnAddElement.addEventListener('click', function() {
+    const newP = document.createElement('p');
+    newP.textContent = 'Новый элемент';
+    document.body.appendChild(newP);
+});
