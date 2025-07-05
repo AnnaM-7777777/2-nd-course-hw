@@ -50,3 +50,17 @@ btnElementAll.forEach(btn => {
         });
     });
 });
+
+
+//_______________________ Задание 5 _______________________
+
+const btnChangeTextAll = document.querySelectorAll('#btnDescripAll');
+const searchDescripAll = document.querySelectorAll('.descriptions');
+
+btnChangeTextAll.forEach(btn => {
+    btn.addEventListener('click', function() {
+        searchDescripAll.forEach(descriptions => {
+            descriptions.textContent = 'Новый текст'; // Меняем текстовое содержимое каждого элемента на 'Измененный текст.'
+        });
+    });
+});
