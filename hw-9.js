@@ -75,3 +75,19 @@ btnAddElement.addEventListener('click', function() {
     newP.textContent = 'Новый элемент';
     document.body.appendChild(newP);
 });
+
+
+//_______________________ Задание 7 _______________________
+
+const btnDelElement = document.getElementById('btnDel');
+
+btnDelElement.addEventListener('click', function() {
+    const paragraph = document.querySelector('.descript');
+    if (paragraph) {
+        paragraph.remove();
+    } else {
+        alert('Элемент с классом descript не найден');
+    }
+
+    paragraph.remove()
+});
