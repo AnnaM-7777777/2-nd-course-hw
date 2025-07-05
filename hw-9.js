@@ -36,3 +36,17 @@ const textChangeElement = document.querySelector('#textChange');
 btnChangeElement.addEventListener('click', function() {
     textChangeElement.textContent = 'Привет, мир!';
 });
+
+
+//_______________________ Задание 4 _______________________
+
+const btnElementAll = document.querySelectorAll('#btnChangeAll');
+const searchElementAll = document.querySelectorAll('.description');
+
+btnElementAll.forEach(btn => {
+    btn.addEventListener('click', function() {
+        searchElementAll.forEach(description => {
+            description.textContent = 'Измененный текст.'; // Меняем текстовое содержимое каждого элемента на 'Измененный текст.'
+        });
+    });
+});
