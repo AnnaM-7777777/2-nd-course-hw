@@ -165,3 +165,214 @@
     align-items: center;
     margin-top: 130px;
 }
+
+
+/* __________  tablet версия окон игр в games - блок «Мини-игры»  __________ */
+@media (max-width: 1200px) {
+
+    /* __________  окно игры №1 в games - блок «Мини-игры»  __________ */
+    .games-show-popup {
+        padding: 28px;
+    }
+
+    .games-show-popup__heading {
+        font-size: 32px;
+    }
+
+    .games-show-popup__btn-close {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        font-size: 18px;
+    }
+
+    .games-show-popup__content-bottom-g1,
+    .games-show-popup__content-bottom-g2 {
+        margin-top: 80px;
+    }
+
+    .games-show-popup__btn
+    .games-show-popup__btn-check {
+        display: flex;
+        gap: 24px;
+    }
+
+    .games-show-popup__btn-gen,
+    .games-show-popup__btn-guess,
+    .games-show-popup__btn-check {
+        width: 198px;
+        height: 60px;
+        font-weight: 500;
+        font-size: 18px;
+        border-radius: 30px;
+    }
+
+    .games-show-popup__input {
+        width: 198px;
+        height: 60px;
+        font-weight: 500;
+        font-size: 18px;
+        border-radius: 30px;
+    }
+
+
+    /* __________  окно игры №2 в games - блок «Мини-игры»  __________ */
+    .games-show-popup__random-example {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 32px;
+    }
+
+    .games-show-popup__content-bottom-g2 {    
+        margin-top: 50px;
+    }
+
+    .games-show-popup__btn {
+        margin-bottom: 32px;
+    }
+
+
+    /* __________  окно игры №3 в games - блок «Мини-игры»  __________ */
+    .games-show-popup__content-bottom-g3 {
+        margin-top: 70px;
+    }
+    
+
+    /* __________  окно игры №4 в games - блок «Мини-игры»  __________ */
+    .games-show-popup__content-bottom-g4 {        
+        gap: 32px;
+        margin-top: 32px;
+    }
+
+    .games-show-popup__message_g4 {
+        width: 420px;
+        height: 200px;
+        padding: 24px;
+    }
+
+    .games-show-popup__heading-h4 {
+        font-size: 24px;
+    }
+
+
+    /* __________  окно игры №5 в games - блок «Мини-игры»  __________ */
+    .games-show-popup__content-bottom-g5,
+    .games-show-popup__content-bottom-g6 {
+        margin-top: 100px;
+    }
+}
+
+/* __________  mobile версия окон игр в games - блок «Мини-игры»  __________ */
+@media (max-width: 768px) {
+
+    /* __________  окно игры №1 в games - блок «Мини-игры»  __________ */
+    .games-show-popup {
+        padding: 29px;
+    }
+
+    .games-show-popup__content-top {
+        display: flex;
+        margin-bottom: 65px;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .games-show-popup__heading {
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    .games-show-popup__btn-close {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        font-size: 14px;
+    }
+
+    .games-show-popup__content-bottom-g1 {
+        margin-top: 55px;
+    }
+
+    .games-show-popup__btn {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        margin-bottom: 32px;
+    }
+
+    .games-show-popup__btn-gen,
+    .games-show-popup__btn-guess,
+    .games-show-popup__btn-check {
+        width: 285px;
+        height: 55px;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .games-show-popup__input {
+        width: 285px;
+        height: 55px;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .games-show-popup__message {
+        font-size: 18px;
+    }
+
+
+    /* __________  окно игры №2 в games - блок «Мини-игры»  __________ */
+    .games-show-popup__random-example {
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
+
+    .games-show-popup__content-bottom-g2 {    
+        margin-top: 80px;
+    }
+
+
+    /* __________  окно игры №3 в games - блок «Мини-игры»  __________ */
+    .games-show-popup__content-bottom-g3 {
+        margin-top: 130px;
+    }
+    
+    
+    /* __________  окно игры №4 в games - блок «Мини-игры»  __________ */
+    .games-show-popup__content-bottom-g4 {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 70px;
+        margin-top: 70px;
+    }
+
+    .games-show-popup__message_g4 {
+        width: auto;
+        height: auto;
+        padding: 0;
+        border: none;
+    }
+
+    .games-show-popup__heading-h4 {
+        font-size: 22px;
+    }
+
+
+    /* __________  окно игры №5 в games - блок «Мини-игры»  __________ */
+    .games-show-popup__content-bottom-g5,
+    .games-show-popup__content-bottom-g6 {
+        margin-top: 150px;
+    }
+    
+
+    /* __________  footer  __________ */
+    .footer {
+        height: 100px;
+    }
+
+    .footer__heading {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
