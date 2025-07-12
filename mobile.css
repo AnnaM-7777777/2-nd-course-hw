@@ -158,6 +158,11 @@
         box-sizing: border-box;
     }
 
+    .games__block-img {        
+        height: 100%;
+        border-radius: 30px;
+    }
+
     .games__block-text {    
         background-color: #FFFFFF;
         padding: 29px 29px 33px 29px;
@@ -302,7 +307,8 @@
 
 
     /* __________  окно игры №5 в games - блок «Мини-игры»  __________ */
-    .games-show-popup__content-bottom-g5 {
+    .games-show-popup__content-bottom-g5,
+    .games-show-popup__content-bottom-g6 {
         margin-top: 150px;
     }
     

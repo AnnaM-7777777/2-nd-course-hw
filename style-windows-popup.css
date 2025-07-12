@@ -158,7 +158,8 @@
 
 
 /* __________  окно игры №5 в games - блок «Мини-игры»  __________ */
-.games-show-popup__content-bottom-g5 {
+.games-show-popup__content-bottom-g5,
+.games-show-popup__content-bottom-g6 {
     display: flex;
     flex-direction: column;
     align-items: center;

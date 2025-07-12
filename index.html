@@ -94,9 +94,7 @@
         <div class="info__games">
             <div class="info__box">
                 <a class="info__box-game" href="#game1">
-                    <div class="info__box-img">
-                        <img src="img/b1-1.png" alt="игра">
-                    </div>
+                    <div class="info__box-img info__box-img_b-1"></div>
 
                     <div class="info__box-text">
                         <p>Игра № 1</p>
@@ -106,9 +104,7 @@
 
 
                 <a class="info__box-game" href="#game4">
-                    <div class="info__box-img">
-                        <img src="img/b1-4.png" alt="игра">
-                    </div>
+                    <div class="info__box-img info__box-img_b-4"></div>
 
                     <div class="info__box-text">
                         <p>Игра № 4</p>
@@ -119,9 +115,7 @@
 
             <div class="info__box">
                 <a class="info__box-game" href="#game2">
-                    <div class="info__box-img">
-                        <img src="img/b1-2.png" alt="игра">
-                    </div>
+                    <div class="info__box-img info__box-img_b-2"></div>
 
                     <div class="info__box-text">
                         <p>Игра № 2</p>
@@ -131,9 +125,7 @@
 
 
                 <a class="info__box-game" href="#game5">
-                    <div class="info__box-img">
-                        <img src="img/b1-5.png" alt="игра">
-                    </div>
+                    <div class="info__box-img info__box-img_b-5"></div>
 
                     <div class="info__box-text">
                         <p>Игра № 5</p>
@@ -144,9 +136,7 @@
 
             <div class="info__box">
                 <a class="info__box-game" href="#game3">
-                    <div class="info__box-img">
-                        <img src="img/b1-3.png" alt="игра">
-                    </div>
+                    <div class="info__box-img info__box-img_b-3"></div>
 
                     <div class="info__box-text">
                         <p>Игра № 3</p>
@@ -156,9 +146,7 @@
 
 
                 <a class="info__box-game" href="#game6">
-                    <div class="info__box-img">
-                        <img src="img/b1-6.png" alt="игра">
-                    </div>
+                    <div class="info__box-img info__box-img_b-6"></div>
 
                     <div class="info__box-text">
                         <p>Игра № 6</p>
@@ -184,7 +172,7 @@
 
                 <!-- __________  игра №1  __________ -->
                 <div class="games__block" id="game1">
-                    <div class="games__block-img"><img src="img/b3-1.png" alt="игра"></div>
+                    <div class="games__block-img games__block-img_b-1"></div>
 
                     <div class="games__block-text">
                         <h3>Угадай число</h3>
@@ -213,7 +201,7 @@
 
                 <!-- __________  игра №2  __________ -->
                 <div class="games__block" id="game2">
-                    <div class="games__block-img"><img src="img/b3-2.png" alt="игра"></div>
+                    <div class="games__block-img games__block-img_b-2"></div>
 
                     <div class="games__block-text">
                         <h3>Простая арифметика</h3>
@@ -243,7 +231,7 @@
 
                 <!-- __________  игра №3  __________ -->
                 <div class="games__block" id="game3">
-                    <div class="games__block-img"><img src="img/b3-3.png" alt="игра"></div>
+                    <div class="games__block-img games__block-img_b-3"></div>
 
                     <div class="games__block-text">
                         <h3>Переверни текст</h3>
@@ -267,7 +255,7 @@
 
                 <!-- __________  игра №4  __________ -->
                 <div class="games__block" id="game4">
-                    <div class="games__block-img"><img src="img/b3-4.png" alt="игра"></div>
+                    <div class="games__block-img games__block-img_b-4"></div>
 
                     <div class="games__block-text">
                         <h3>Камень, ножницы, бумага</h3>
@@ -296,7 +284,7 @@
 
                 <!-- __________  игра №5  __________ -->
                 <div class="games__block" id="game5">
-                    <div class="games__block-img"><img src="img/b3-5.png" alt="игра"></div>
+                    <div class="games__block-img games__block-img_b-5"></div>
 
                     <div class="games__block-text">
                         <h3>Простая викторина</h3>
@@ -319,14 +307,26 @@
 
                 <!-- __________  игра №6  __________ -->
                 <div class="games__block" id="game6">
-                    <div class="games__block-img"><img src="img/b3-6.png" alt="игра"></div>
+                    <div class="games__block-img games__block-img_b-6"></div>
 
                     <div class="games__block-text">
                         <h3>Генератор случайных цветов</h3>
                         <p>Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                        <button class="games__block-btn">Играть!</button>
-                    </div>            
-                </div>          
+                        <button class="games__block-btn" onclick="showPopupGame6()">Играть!</button>
+                    </div>
+                    
+                    <!-- __________  окно игры №6  __________ -->
+                    <div class="games-show-popup" id="popupGame6">                        
+                        <div class="games-show-popup__content-top">
+                            <h3 class="games-show-popup__heading">Генератор случайных цветов</h3>
+                            <button class="games-show-popup__btn-close" onclick="closePopupGame6()">✖︎</button>
+                        </div>
+
+                        <div class="games-show-popup__content-bottom-g6">
+                            <button class="games-show-popup__btn-guess" id="btnBackgroundColor">Сменить цвет</button>
+                        </div>                                           
+                    </div>
+                </div>         
             </div>
         </div>
 
