@@ -34,7 +34,6 @@ let quotient = numBig / numSmall;
 
 let lineBreak = '\n';
 
-//alert(`сумма: ` + sum + lineBreak + `разность: ` + difference + lineBreak + `произведение: ` + product + lineBreak + `частное: ` + quotient);
 alert(` сумма: ${sum}, ${lineBreak} разность: ${difference}, ${lineBreak} произведение: ${product}, ${lineBreak} частное: ${quotient}`);
 
 
